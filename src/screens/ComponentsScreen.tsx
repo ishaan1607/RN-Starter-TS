@@ -1,8 +1,15 @@
 import React from 'react';
-import {StyleSheet, Text} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 
 const ComponentsScreen = () => {
-  return <Text style={styles.textStyle}>ComponentsScreen, is here.</Text>;
+
+  const greeting: string = 'Greeting Message!';
+  return (
+    <View>
+      <Text style={styles.textStyle}>ComponentsScreen, is here.</Text>
+      <Text>{greeting}</Text>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
